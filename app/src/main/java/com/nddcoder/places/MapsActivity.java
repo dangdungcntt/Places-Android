@@ -467,11 +467,12 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
 
         Routing routing = new Routing.Builder()
                 .travelMode(Routing.TravelMode.DRIVING)
+                .key(getString(R.string.google_maps_key))
                 .language("VI")
                 .withListener(new RoutingListener() {
                     @Override
                     public void onRoutingFailure(RouteException e) {
-
+                        e.printStackTrace();
                     }
 
                     @Override
