@@ -467,7 +467,7 @@ public class MapsActivity extends FragmentActivity implements LocationListener, 
 
         Routing routing = new Routing.Builder()
                 .travelMode(Routing.TravelMode.DRIVING)
-                .key(getString(R.string.google_maps_key))
+                .key(getString(R.string.google_maps_web_key))
                 .language("VI")
                 .withListener(new RoutingListener() {
                     @Override
